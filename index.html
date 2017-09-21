@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>LineUp Q1 Project</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" href="styles.css"/>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="blue-grey">
         <div class="nav-wrapper">
           <a href="#" class="center"></a>
           <a id="nav-mobile" class="center hide-on-med-and-down">
@@ -23,17 +24,13 @@
 
     <main>
       <h1 href="#" class="center">LineUp</h1>
-      <h4 href="#" class="center">Where Music Lives</h4>
+      <h4 href="#" class="center">Music for Everyone, Everywhere</h4>
       <div class="row">
         <form id="searchForm" class="col s12">
           <div class="row">
-            <div class="input-field col s6">
+            <div class="input-field col s12">
               <input placeholder="Artist" id="artist" type="text" class="validate">
               <label for="artist"></label>
-            </div>
-            <div class="input-field col s6">
-              <input placeholder="Current location"id="current_location" type="text" class="validate">
-              <label for="current_location"></label>
             </div>
           </div>
           <div>
@@ -43,29 +40,27 @@
           </div>
         </form>
       </div>
-
-      <div class=""id="artistName">
-      </div>
-
-      <div id="artistEvents">
+      <div class="row">
+        <div class="col s12"><span class="flow-text"></span></div>
+        <div class="col s7 push-s5" id="artistName"></div>
+        <div class="col s5 pull-s7 collection" id="artistEvents"></div>
       </div>
 
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer blue-grey">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
-            <h5 class="white-text">Footer Content</h5>
+            <h5 class="white-text">LineUp</h5>
             <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
           </div>
           <div class="col l4 offset-l2 s12">
             <h5 class="white-text">Links</h5>
             <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              <li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
+              <li><a class="grey-text text-lighten-3" href="about.html">About</a></li>
+              <li><a class="grey-text text-lighten-3" href="contact.html">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -77,8 +72,10 @@
         </div>
       </div>
     </footer>
+
   </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="script.js"></script>
   </body>

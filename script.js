@@ -6,10 +6,6 @@ document.querySelector("#searchForm").addEventListener("submit", function (event
     var searchTerm = document.querySelector("#artist").value;
     // console.log(searchTerm);
 
-    var location = document.querySelector("#current_location").value;
-    // console.log(location);
-
-
     $.get("https://rest.bandsintown.com/artists/"+searchTerm+"?app_id=lineupapp", function(data){
 
       var name = data.name;
@@ -35,16 +31,17 @@ document.querySelector("#searchForm").addEventListener("submit", function (event
 // Beginning of BandsinTown API to get event information
 
     $.get("https://rest.bandsintown.com/artists/"+searchTerm+"/events?app_id=lineupapp", function (data){
-      var unorderedList = document.createElement('ul');
+      // var unorderedList = document.createElement('ul');
       console.log(data);
       for (var i = 0; i <data.length; i++){
         var artistEvent = document.createElement('a');
-        var artistEventNode = document.createElement('li');
+        // var artistEventNode = document.createElement('li');
         artistEvent.setAttribute('href', data[i].offers[0].url);
+        artistEvent.setAttribute('class', 'collection-item active');
         artistEvent.innerHTML = data[i].venue.name;
-        artistEventNode.appendChild(artistEvent);
-        unorderedList.appendChild(artistEventNode);
-        document.getElementById('artistEvents').appendChild(unorderedList);
+        // artistEventNode.appendChild(artistEvent);
+        // unorderedList.appendChild(artistEventNode);
+        document.getElementById('artistEvents').appendChild(artistEvent);
 
       }
 
