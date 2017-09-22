@@ -12,6 +12,7 @@ document.querySelector("#searchForm").addEventListener("submit", function (event
       var nameNode = document.createTextNode(name);
       var createNameElement = document.createElement('p');
       createNameElement.appendChild(nameNode);
+      createNameElement.setAttribute("style", "color: white;");
       var address = document.querySelector('#artistName');
       address.appendChild(createNameElement);
 
