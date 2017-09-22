@@ -1,6 +1,6 @@
-  .mainBackground {
-    background-color: #e3f2fd;
-  }
+    /*div {
+    background-color: indigo lighten-4;
+  }*/
 
     div {
       padding: 20px 50px;
@@ -18,7 +18,6 @@
     }
     html {
         font-family: "Courier New", Courier, monospace;
-        /*font-weight: bold;*/
       }
       .center .hide-on-med-and-down {
         font-size: 20px;
@@ -32,4 +31,39 @@
       }
       .center .font-weight {
         font-weight: bold;
+      }
+      .artistName {
+        color: white-text;
+      }
+      .collection {
+        border-color: transparent;
+      }
+      .collection-item {
+        color: white-text;
+      }
+      .collection .artistEvents {
+        color: black;
+      }
+      .alert {
+        padding: 20px;
+        background-color: #e91e63; /* Red */
+        color: white;
+        margin-bottom: 15px;
+      }
+
+/* The close button */
+      .closebtn {
+        margin-left: 20px;
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 22px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+/* When moving the mouse over the close button */
+      .closebtn: hover {
+        color: black;
       }
