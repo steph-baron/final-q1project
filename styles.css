@@ -14,11 +14,18 @@
     }
     html {
         font-family: "Courier New", Courier, monospace;
-        weight: 100;
+        /*font-weight: bold;*/
       }
       .center .hide-on-med-and-down {
         font-size: 20px;
+        font-weight: 100;
       }
       .btn, .btn-large {
         background-color: #e91e63 !important;
+      }
+      .font-size {
+        font-size: 30px;
+      }
+      .center .font-weight {
+        font-weight: bold;
       }
